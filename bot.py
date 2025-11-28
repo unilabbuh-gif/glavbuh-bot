@@ -45,7 +45,7 @@ def ask_openai(user_text):
     headers = {"Authorization": f"Bearer {OPENAI_API_KEY}"}
 
     data = {
-        "model": "gpt-4o-mini",
+        "model": "gpt-4o-mini-tts",
         "messages": [
             {"role": "system", "content": system_prompt},
             {"role": "user",  "content": user_text}
